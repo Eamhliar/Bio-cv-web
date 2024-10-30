@@ -1,0 +1,175 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+  background-color: hsl(210, 2%, 32%);
+  font-size: 1.2em;
+  margin: 1rem;
+}
+
+.container {
+    min-height: 100vh;
+    min-height: 100dvh; /*Dynamic Viewport Height*/
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    position: relative;
+  }
+  .imgBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-bottom: 1px solid hsla(200, 100%, 30%, 0.3);
+    margin-bottom: 50px;
+  }
+  img{
+    width: 75%;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  
+
+  .sideBar{
+    color: hsl(210, 7%, 56%);
+    border-radius: 5px;
+    background-color: hsl(200, 100%, 15%);
+    display: flex;
+    flex-direction: column;
+    grid-area: 1/1/6/2;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    flex-shrink: 1;
+  }
+  .sideBar h2{
+    color: hsl(210, 7%, 56%);
+    text-align: center;
+  }
+  .sideBar h3{
+    color: antiquewhite;
+    text-align: center;
+  }
+  .contact, .skills, .lang, .interests{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  
+  .contact, .skills, .lang, .interests, ul{
+    position: relative;
+    margin-top: 0;
+    list-style: none;
+    padding: 0;
+  }
+  .contact  ul li{
+    margin: 10px 0;
+    position: relative;
+    align-items: start;
+  }
+  .contact ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 1.2rem;
+    color: hsl(209, 100%, 49%);
+  }
+  .contact ul li span{
+    color:hsl(210, 7%, 56%);
+  }
+  .contact ul li a{
+    text-decoration: none;
+    color: hsl(210, 7%, 56%);
+  }
+ 
+  .skills .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    background: black;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .lang .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    background: black;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .interests  ul li{
+    margin: 10px 0;
+    position: relative;
+    align-items: start;
+  }
+  .interests ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 1.2rem;
+    color: hsl(209, 100%, 49%);
+  }
+  .interests ul li span{
+    color:hsl(210, 7%, 56%);
+  }
+  
+
+ .percent  div{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background:hsl(210, 23%, 42%);
+      border-radius: 10px;
+  }
+  .item {
+    color: hsl(210, 2%, 22%);
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    background-color: hsl(210, 7%, 56%);
+    padding: 0 20px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  .item h3{
+    color: hsl(200, 100%, 30%);
+  }
+  .timeJob{
+    font-style: italic;
+    color: hsl(200, 100%, 20%);
+  }
+  .job{
+    margin-bottom: 50px;
+    border-bottom: 1px double  hsla(210, 2%, 22%, 0.2);
+  }
+  .seminars{
+    margin-bottom: 0;
+  }
+ .semi{
+  margin-bottom: 50px;
+ }
+  
+  h2{
+    color: hsl(200, 100%, 30%);
+  }
+p{
+    text-align: left;
+}
+@media (max-width: 720px) {
+  .container{
+    display: block;
+  }
+}
